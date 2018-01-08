@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/news/news",
+    "pages/index/index",
+    "pages/detail/detail" 
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#B3D4DB"
+  }
+
+}

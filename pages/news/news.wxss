@@ -1,0 +1,90 @@
+page{
+  width:100%;
+  height:100%;
+}
+.news{
+  width:100%;
+}
+.news .swiper{
+  width:100%;
+  height:340rpx;
+}
+.swiper_img{
+  width:100%;
+  height:100%;
+}
+.item{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.item .item-top{
+  height:80rpx;
+  width:100%;
+  display: flex;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.item .user_img{
+  width:80rpx;
+  height:80rpx;
+  border-radius: 80rpx;
+  padding-right: 40rpx;
+}
+.item .date_text{
+  flex:1;
+  font-size: 38rpx;
+  line-height: 80rpx;
+  color:rgba(102,102,102,255);
+  font-weight: bold;
+  text-transform:capitalize;
+}
+.item .title{
+  display: block;
+  width:100%;
+  height:80rpx;
+  font-size: 38rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.item .center image{
+  width:100%;
+  height:335rpx;
+}
+.item .discribtion{
+  width:100%;
+  height:auto;
+}
+.item .discribtion text{
+  width:100%;
+  height: 140rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 35rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+  color:rgba(128,128,128,255);
+}
+.item .bottom {
+  display: flex;
+  height:60rpx;
+  width:100%;
+  margin-top: 10rpx;
+  line-height: 60rpx;
+}
+.item .bottom text{
+  font-size: 30rpx;
+  color:rgba(128,128,128,255);
+}
+.item .bottom image{
+  width:40rpx;
+  height:40rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  vertical-align:middle;
+
+}

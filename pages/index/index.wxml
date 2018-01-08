@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='index'>
+  <image src="../../images/user_avatar.jpg"></image>
+  <text class='index_title'>Hello,Ms.Han</text>
+  <view class='index_btn' bindtap='toStart'>
+    <text class='index_btn_text'>Get Start</text>
+  </view>
+</view>

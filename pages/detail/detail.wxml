@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <image class='top_img' src='{{articleItemData.headImgSrc}}'></image>
+  <view class='user_publish_info'>
+    <image src='{{articleItemData.avatar}}'></image>
+    <text class='user_name'>{{articleItemData.author}}</text><text class='publish'>发表于</text><text class='date'>{{articleItemData.dateTime}}</text>
+  </view>
+  <text class='title'>{{articleItemData.title}}</text>
+  <view class='menu'>
+   <view class='line'></view>
+   <image src='../../images/icon/collection.png' class='collection'></image>
+   <image src='../../images/icon/share.png' class='share'></image>
+  </view>
+  <view class='content'>
+  {{articleItemData.detail}}
+  </view>
+</view>

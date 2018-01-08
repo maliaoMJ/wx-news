@@ -1,0 +1,51 @@
+<!--pages/news/news.wxml-->
+<view class='news'>
+  <swiper
+   class='swiper'
+   indicator-dots='{{true}}'
+   indicator-color='#fff'
+   indicator-active-color='red'
+   autoplay='{true}'
+   interval='2000'
+   duration='500'
+
+   >
+     <swiper-item>
+       <image class='swiper_img' src='../../images/vr.png'></image>
+     </swiper-item>
+     <swiper-item>
+       <image class='swiper_img' src='../../images/iqiyi.png'></image>
+     </swiper-item>
+     <swiper-item>
+       <image class='swiper_img' src='../../images/wx.png'></image>
+     </swiper-item>
+  </swiper>
+ <view wx:for="{{articleListData}}" wx:for-item="item"  wx:for-index="index" wx:key="{{index}}">
+    <view class='item' bindtap='toDetailPage' data-article-id="{{item.postId}}" >
+    <view class='item-top'>
+     <image class='user_img' src='{{item.avatar}}'></image>
+     <text class='date_text'>{{item.date}}</text>
+    </view>
+    <text class='title'>{{item.title}}</text>
+    <view class='center'>
+      <image src='{{item.imgSrc}}'></image>
+    </view>
+   
+    <view class='discribtion'>
+      <text>{{item.content}}
+      </text>
+    </view>
+    <view class='bottom'>
+      <view class='icon_item'>
+        <image src='../../images/icon/chat1.png'></image>
+        <text class=''>{{item.reading}}</text>
+      </view>
+      <view class='icon_item'>
+        <image src='../../images/icon/view.png'></image>
+        <text class=''>{{item.collection}}</text>
+      </view>
+    </view>
+  </view>
+ </view>
+
+</view>
